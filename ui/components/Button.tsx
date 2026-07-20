@@ -10,7 +10,7 @@ export default function Button({ onClick, className, children }: BotonProps) {
   return (
     <button
       onClick={onClick}
-      className={`cursor-pointer rounded-lg bg-blue-700 px-4 py-2 font-medium text-white transition-colors duration-200 hover:bg-blue-700 active:scale-95 ${className}`}
+      className={`cursor-pointer rounded-lg bg-emerald-600 px-4 py-2 font-medium text-white transition-all duration-200 hover:bg-emerald-700 active:scale-95 disabled:cursor-not-allowed disabled:opacity-50 ${className}`}
     >
       {children}
     </button>

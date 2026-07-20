@@ -18,7 +18,7 @@ export default function ProductCard({
     alert(description);
   };
   return (
-    <div className="w-72 overflow-hidden rounded-2xl bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+    <div className="w-72 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:border-emerald-300 hover:shadow-xl">
       <Image
         src={image}
         alt={title}
@@ -29,7 +29,9 @@ export default function ProductCard({
       <div className="flex flex-col gap-3 p-4">
         <h2 className="text-xl font-semibold text-slate-800">{title}</h2>
         <p className="line-clamp-2 text-sm text-gray-600">{description}</p>
-        <p className="text-2xl font-bold text-blue-800">Bs. {price.toFixed(2)}</p>
+        <p className="text-2xl font-bold text-emerald-600">
+          Bs. {price.toFixed(2)}
+        </p>
         <Button onClick={handleViewDetails} className="w-full">
           Ver descripción
         </Button>
